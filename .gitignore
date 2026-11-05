@@ -1,0 +1,17 @@
+# Runtime data, secrets, build output
+var/
+backend/.venv/
+backend/.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.env
+
+# Development only, kept locally but not deployed: synthetic data, evaluation, OCR training, tests, screenshots
+data/
+eval/
+infra/ocr-train/
+backend/tests/
+docs/
+backend/dg/seed_demo.py

@@ -1,0 +1,33 @@
+[project]
+name = "deliverable-guard"
+version = "0.1.0"
+description = "Deliverable Guard: cross-document consistency and risk check agent"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "python-multipart>=0.0.9",
+  "sqlalchemy>=2.0",
+  "pydantic>=2.7",
+  "python-docx>=1.1",
+  "openpyxl>=3.1",
+  "python-pptx>=1.0",
+  "pymupdf>=1.24",
+  "rapidocr-onnxruntime>=1.3",
+  "httpx>=0.27",
+  "pyjwt>=2.8",
+  "pyyaml>=6.0",
+  "rapidfuzz>=3.9",
+  "reportlab>=4.2",
+  "opencc-python-reimplemented>=0.1.7",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dg"]
